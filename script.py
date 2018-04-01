@@ -42,6 +42,6 @@ msg.attach(part)
 text = msg.as_string()
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login(email_user,'Dcnd@123')
+server.login(email_user,'*******')  #your password
 server.sendmail(email_user,email_send,text)
 server.quit()
